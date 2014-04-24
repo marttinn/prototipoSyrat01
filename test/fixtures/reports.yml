@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombreAjustador: MyString
+  numeroPoliza: MyString
+  fechaExpedicion: 2014-04-23
+  nombreAsegurado: MyString
+  telefonoAsegurado: MyString
+  estatusCobranza: false
+  equipoAmparado: false
+  comentarioEquipoAmparado: MyText
+  numeroSiniestro: MyString
+  numeroInciso: MyString
+  fechaSiniestro: 2014-04-23
+  terceroAsegurado: false
+  condicionesEspeciales: MyText
+  nombreTercero: MyString
+  inventario: MyText
+  numeroEconomico: MyString
+  siniestro: MyText
+  grua: false
+  valorComercial: MyString
+  sigueAuto: false
+  deducible: false
+  deducibleValor: MyString
+  aseguradoTercero: MyString
+  marca: MyString
+  tipo: MyString
+  modelo: MyString
+  numeroPuertas: 1
+  color: MyString
+  numeroSerie: MyString
+  numeroMotor: MyString
+  placas: MyString
+
+two:
+  nombreAjustador: MyString
+  numeroPoliza: MyString
+  fechaExpedicion: 2014-04-23
+  nombreAsegurado: MyString
+  telefonoAsegurado: MyString
+  estatusCobranza: false
+  equipoAmparado: false
+  comentarioEquipoAmparado: MyText
+  numeroSiniestro: MyString
+  numeroInciso: MyString
+  fechaSiniestro: 2014-04-23
+  terceroAsegurado: false
+  condicionesEspeciales: MyText
+  nombreTercero: MyString
+  inventario: MyText
+  numeroEconomico: MyString
+  siniestro: MyText
+  grua: false
+  valorComercial: MyString
+  sigueAuto: false
+  deducible: false
+  deducibleValor: MyString
+  aseguradoTercero: MyString
+  marca: MyString
+  tipo: MyString
+  modelo: MyString
+  numeroPuertas: 1
+  color: MyString
+  numeroSerie: MyString
+  numeroMotor: MyString
+  placas: MyString
