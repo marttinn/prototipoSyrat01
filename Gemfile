@@ -16,6 +16,7 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'protected_attributes'
 gem 'bcrypt-ruby', :require => "bcrypt"
+gem 'rails_serve_static_assets', group: [:production]
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
