@@ -1,13 +1,24 @@
-<h1>Log in</h1>
+<div class="panelLogin">
+    <section class="panBack" >
 
-<%= form_tag sessions_path do %>
-  <p>
-    <%= label_tag :userName %><br />
-    <%= text_field_tag :userName, params[:userName] %>
-  </p>
-  <p>
-    <%= label_tag :password %><br />
+<%= form_tag sessions_path :class => 'logoLogin' do %>
+  <div class="logoLogin">
+    <img src="img/imgLogo.svg" alt="Syrat" class="imgLogo center">
+  </div>
+
+  <div class="inlineCont" style="width:250px">
+    <%= text_field_tag :userName, params[:userName], :placeholder => 'USUARIO' %>
+  </div>
+  <div class="inlineCont" style="width:250px">
     <%= password_field_tag :password %>
-  </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
-<% end %>
+  </div>
+  <div>
+  <label>
+    <input type="checkbox" class="ios-switch green" /><div><div></div></div>
+  </label>
+  </div>
+  <div class="botLogin"><%= submit_tag "", :class => 'goButton'%></div>
+  <% end %>
+  </section>
+
+  </div>
