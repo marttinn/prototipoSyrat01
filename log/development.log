@@ -9721,3 +9721,514 @@ NameError (uninitialized constant User::BCrypt):
   Rendered /Users/martinn/.rvm/gems/ruby-2.0.0-p451@railstutorial_rails_4_0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
   Rendered /Users/martinn/.rvm/gems/ruby-2.0.0-p451@railstutorial_rails_4_0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
   Rendered /Users/martinn/.rvm/gems/ruby-2.0.0-p451@railstutorial_rails_4_0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-24 02:10:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (64.6ms)
+Completed 200 OK in 697ms (Views: 692.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:10:55 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:10:55 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:10:55 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:55 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:10:56 -0500
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-04-24 02:10:58 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions?class=logoLogin" for 127.0.0.1 at 2014-04-24 02:11:02 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "userName"=>"martin", "password"=>"[FILTERED]", "commit"=>"", "class"=>"logoLogin"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."userName" = 'martin' LIMIT 1
+Redirected to http://localhost:3000/reports/new
+Completed 302 Found in 106ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-24 02:11:02 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (77.8ms)
+  Rendered reports/new.html.erb within layouts/application (82.6ms)
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 131ms (Views: 123.1ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2014-04-24 02:11:09 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "report"=>{"nombreAjustador"=>"", "numeroPoliza"=>"", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"", "numeroPuertas"=>"", "color"=>"", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Create Report"}
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:27:in `create'
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "reports" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 24 Apr 2014 07:11:09 UTC +00:00], ["updated_at", Thu, 24 Apr 2014 07:11:09 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/reports/1
+Completed 302 Found in 19ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/reports/1" for 127.0.0.1 at 2014-04-24 02:11:09 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered reports/show.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2014-04-24 02:11:13 -0500
+Processing by ReportsController#index as HTML
+  [1m[36mReport Load (0.2ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-24 02:11:20 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (11.1ms)
+  Rendered reports/new.html.erb within layouts/application (12.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2014-04-24 02:11:24 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "report"=>{"nombreAjustador"=>"sadfsdfdsaf", "numeroPoliza"=>"", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"", "numeroPuertas"=>"", "color"=>"", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Create Report"}
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "reports" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Thu, 24 Apr 2014 07:11:24 UTC +00:00], ["updated_at", Thu, 24 Apr 2014 07:11:24 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/reports/2
+Completed 302 Found in 39ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/reports/2" for 127.0.0.1 at 2014-04-24 02:11:24 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReport Load (0.2ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered reports/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2014-04-24 02:11:27 -0500
+Processing by ReportsController#index as HTML
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-24 02:12:05 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (18.2ms)
+  Rendered reports/new.html.erb within layouts/application (19.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (47.7ms)
+  Rendered reports/new.html.erb within layouts/application (48.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:42 -0500
+
+
+Started POST "/reports" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "report"=>{"nombreAjustador"=>"asdf", "numeroPoliza"=>"asdf", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"", "numeroPuertas"=>"", "color"=>"", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Create Report"}
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:27:in `create'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reports" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 24 Apr 2014 07:12:50 UTC +00:00], ["updated_at", Thu, 24 Apr 2014 07:12:50 UTC +00:00]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/reports/3
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/reports/3" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mReport Load (0.2ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered reports/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:12:50 -0500
+
+
+Started GET "/reports/3/edit" for 127.0.0.1 at 2014-04-24 02:13:04 -0500
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mReport Load (0.2ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered reports/_form.html.erb (23.4ms)
+  Rendered reports/edit.html.erb within layouts/application (26.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/reports/3" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+Processing by ReportsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "report"=>{"nombreAjustador"=>"sadfdsaf", "numeroPoliza"=>"", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"", "numeroPuertas"=>"", "color"=>"", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Update Report", "id"=>"3"}
+  [1m[35mReport Load (0.2ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:44:in `block in update'
+	app/controllers/reports_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/reports/3
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/reports/3" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered reports/show.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:13:07 -0500
+
+
+Started GET "/reports/3" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mReport Load (0.2ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered reports/show.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:33 -0500
+
+
+Started GET "/reports/3/edit" for 127.0.0.1 at 2014-04-24 02:15:36 -0500
+Processing by ReportsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mReport Load (0.2ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered reports/_form.html.erb (33.8ms)
+  Rendered reports/edit.html.erb within layouts/application (36.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/reports/3" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+Processing by ReportsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "report"=>{"nombreAjustador"=>"asdfasdf", "numeroPoliza"=>"", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"", "numeroPuertas"=>"", "color"=>"", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Update Report", "id"=>"3"}
+  [1m[36mReport Load (0.1ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:44:in `block in update'
+	app/controllers/reports_controller.rb:43:in `update'
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/reports/3
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/reports/3" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mReport Load (0.1ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered reports/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:15:39 -0500
+
+
+Started GET "/reports" for 127.0.0.1 at 2014-04-24 02:15:56 -0500
+Processing by ReportsController#index as HTML
+  [1m[35mReport Load (0.4ms)[0m  SELECT "reports".* FROM "reports"
+  Rendered reports/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-24 02:16:04 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (55.3ms)
+  Rendered reports/new.html.erb within layouts/application (56.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 96ms (Views: 94.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reports" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3jBhvxH+dM3MxlGd2gut/nm3T4h4/km/x7aMzGR/pI=", "report"=>{"nombreAjustador"=>"asdfasdf", "numeroPoliza"=>"sadfasdf", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"asdfasdf", "numeroPuertas"=>"-1", "color"=>"asdf", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Create Report"}
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:27:in `create'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reports" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 24 Apr 2014 07:16:10 UTC +00:00], ["updated_at", Thu, 24 Apr 2014 07:16:10 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/reports/4
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/reports/4" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mReport Load (0.1ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered reports/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:10 -0500
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (42.6ms)
+  Rendered reports/new.html.erb within layouts/application (43.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 02:16:49 -0500
+
+
+Started POST "/reports" for 127.0.0.1 at 2014-04-24 02:16:55 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X+Z55QNJhhqWg2+Yc36+6uYaLXy8PTt/dIc5KPMpJiQ=", "report"=>{"nombreAjustador"=>"asdf", "numeroPoliza"=>"", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"24", "nombreAsegurado"=>"", "telefonoAsegurado"=>"", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"", "numeroSiniestro"=>"", "numeroInciso"=>"", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"24", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"", "nombreTercero"=>"", "inventario"=>"", "numeroEconomico"=>"", "siniestro"=>"", "grua"=>"0", "valorComercial"=>"", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"", "aseguradoTercero"=>"", "marca"=>"", "tipo"=>"", "modelo"=>"", "numeroPuertas"=>"", "color"=>"", "numeroSerie"=>"", "numeroMotor"=>"", "placas"=>""}, "commit"=>"Create Report"}
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:27:in `create'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reports" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Thu, 24 Apr 2014 07:16:55 UTC +00:00], ["updated_at", Thu, 24 Apr 2014 07:16:55 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/reports/5
+Completed 302 Found in 12ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/reports/5" for 127.0.0.1 at 2014-04-24 02:16:55 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mReport Load (0.2ms)[0m  SELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered reports/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms)
