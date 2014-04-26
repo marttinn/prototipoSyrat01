@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     user = User.authenticate(params[:userName], params[:password])
     if user
       session[:user_id] = user.id
-      redirect_to new_report_url, :notice => "Autenticación Exitosa"
+      redirect_to new_reporte_url, :notice => "Autenticación Exitosa"
     else
       flash.now.alert = "User Name Incorrecto o password Erronea"
       render "new"

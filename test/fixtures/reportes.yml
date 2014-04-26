@@ -3,7 +3,7 @@
 one:
   nombreAjustador: MyString
   numeroPoliza: MyString
-  fechaExpedicion: 2014-04-23
+  fechaExpedicion: 2014-04-25
   nombreAsegurado: MyString
   telefonoAsegurado: MyString
   estatusCobranza: false
@@ -11,7 +11,7 @@ one:
   comentarioEquipoAmparado: MyText
   numeroSiniestro: MyString
   numeroInciso: MyString
-  fechaSiniestro: 2014-04-23
+  fechaSiniestro: 2014-04-25
   terceroAsegurado: false
   condicionesEspeciales: MyText
   nombreTercero: MyString
@@ -36,7 +36,7 @@ one:
 two:
   nombreAjustador: MyString
   numeroPoliza: MyString
-  fechaExpedicion: 2014-04-23
+  fechaExpedicion: 2014-04-25
   nombreAsegurado: MyString
   telefonoAsegurado: MyString
   estatusCobranza: false
@@ -44,7 +44,7 @@ two:
   comentarioEquipoAmparado: MyText
   numeroSiniestro: MyString
   numeroInciso: MyString
-  fechaSiniestro: 2014-04-23
+  fechaSiniestro: 2014-04-25
   terceroAsegurado: false
   condicionesEspeciales: MyText
   nombreTercero: MyString

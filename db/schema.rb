@@ -11,7 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140424034347) do
+ActiveRecord::Schema.define(version: 20140426030005) do
+
+  create_table "reportes", force: true do |t|
+    t.string   "nombreAjustador"
+    t.string   "numeroPoliza"
+    t.date     "fechaExpedicion"
+    t.string   "nombreAsegurado"
+    t.string   "telefonoAsegurado"
+    t.boolean  "estatusCobranza"
+    t.boolean  "equipoAmparado"
+    t.text     "comentarioEquipoAmparado"
+    t.string   "numeroSiniestro"
+    t.string   "numeroInciso"
+    t.date     "fechaSiniestro"
+    t.boolean  "terceroAsegurado"
+    t.text     "condicionesEspeciales"
+    t.string   "nombreTercero"
+    t.text     "inventario"
+    t.string   "numeroEconomico"
+    t.text     "siniestro"
+    t.boolean  "grua"
+    t.string   "valorComercial"
+    t.boolean  "sigueAuto"
+    t.boolean  "deducible"
+    t.string   "deducibleValor"
+    t.string   "aseguradoTercero"
+    t.string   "marca"
+    t.string   "tipo"
+    t.string   "modelo"
+    t.integer  "numeroPuertas"
+    t.string   "color"
+    t.string   "numeroSerie"
+    t.string   "numeroMotor"
+    t.string   "placas"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "reports", force: true do |t|
     t.string   "nombreAjustador"

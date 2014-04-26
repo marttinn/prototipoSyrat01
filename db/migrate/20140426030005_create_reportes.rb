@@ -1,6 +1,6 @@
-class CreateReports < ActiveRecord::Migration
+class CreateReportes < ActiveRecord::Migration
   def change
-    create_table :reports do |t|
+    create_table :reportes do |t|
       t.string :nombreAjustador
       t.string :numeroPoliza
       t.date :fechaExpedicion
