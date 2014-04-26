@@ -1,10 +1,10 @@
-<%= form_for(@reporte) do |f| %>
-  <% if @reporte.errors.any? %>
+<%= form_for(@report) do |f| %>
+  <% if @report.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@reporte.errors.count, "error") %> prohibited this reporte from being saved:</h2>
+      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
 
       <ul>
-      <% @reporte.errors.full_messages.each do |msg| %>
+      <% @report.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

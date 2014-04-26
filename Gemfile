@@ -16,6 +16,8 @@ gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'protected_attributes'
+# gem 'strong_parameters'
+
 gem 'bcrypt-ruby', :require => "bcrypt"
 
 group :doc do
