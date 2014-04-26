@@ -10525,3 +10525,404 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-24 23:15:40 -0500
 
 
 Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-24 23:15:40 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 126ms (Views: 121.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:50:46 -0500
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-04-25 21:51:38 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-04-25 21:51:38 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:51:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:39 -0500
+
+
+Started POST "/sessions?class=logoLogin" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FR3fLWac73uyAnKEgcYbpL9bycADOe9Q4VQprdm4uc=", "userName"=>"martin", "password"=>"[FILTERED]", "commit"=>"", "class"=>"logoLogin"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."userName" = 'martin' LIMIT 1
+Redirected to http://localhost:3000/reports/new
+Completed 302 Found in 95ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (90.3ms)
+  Rendered reports/new.html.erb within layouts/application (94.3ms)
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 109ms (Views: 102.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:51:41 -0500
+
+
+Started POST "/reports" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+Processing by ReportsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FR3fLWac73uyAnKEgcYbpL9bycADOe9Q4VQprdm4uc=", "report"=>{"nombreAjustador"=>"holis", "numeroPoliza"=>"wolis", "fechaExpedicion(1i)"=>"2014", "fechaExpedicion(2i)"=>"4", "fechaExpedicion(3i)"=>"26", "nombreAsegurado"=>"sup", "telefonoAsegurado"=>"sup", "estatusCobranza"=>"0", "equipoAmparado"=>"0", "comentarioEquipoAmparado"=>"lolol", "numeroSiniestro"=>"sup", "numeroInciso"=>"sup", "fechaSiniestro(1i)"=>"2014", "fechaSiniestro(2i)"=>"4", "fechaSiniestro(3i)"=>"26", "terceroAsegurado"=>"0", "condicionesEspeciales"=>"sup", "nombreTercero"=>"sup", "inventario"=>"sup", "numeroEconomico"=>"suip", "siniestro"=>"sup", "grua"=>"0", "valorComercial"=>"mucho", "sigueAuto"=>"0", "deducible"=>"0", "deducibleValor"=>"oijulk", "aseguradoTercero"=>"lkj", "marca"=>"lkj", "tipo"=>"lkj", "modelo"=>"lkj", "numeroPuertas"=>"1", "color"=>"lkj", "numeroSerie"=>"lkj", "numeroMotor"=>"lkj", "placas"=>"lkj"}, "commit"=>"Create Report"}
+WARNING: Can't mass-assign protected attributes for Report: nombreAjustador, numeroPoliza, fechaExpedicion(1i), fechaExpedicion(2i), fechaExpedicion(3i), nombreAsegurado, telefonoAsegurado, estatusCobranza, equipoAmparado, comentarioEquipoAmparado, numeroSiniestro, numeroInciso, fechaSiniestro(1i), fechaSiniestro(2i), fechaSiniestro(3i), terceroAsegurado, condicionesEspeciales, nombreTercero, inventario, numeroEconomico, siniestro, grua, valorComercial, sigueAuto, deducible, deducibleValor, aseguradoTercero, marca, tipo, modelo, numeroPuertas, color, numeroSerie, numeroMotor, placas
+	app/controllers/reports_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "reports" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Sat, 26 Apr 2014 02:52:19 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 02:52:19 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/reports/6
+Completed 302 Found in 13ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/reports/6" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered reports/show.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:19 -0500
+
+
+Started GET "/reports" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+Processing by ReportsController#index as HTML
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.erb within layouts/application (7.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reports" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+Processing by ReportsController#index as HTML
+  [1m[36mReport Load (0.3ms)[0m  [1mSELECT "reports".* FROM "reports"[0m
+  Rendered reports/index.html.erb within layouts/application (35.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:33 -0500
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:47 -0500
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:50 -0500
+
+
+Started POST "/sessions?class=logoLogin" for 127.0.0.1 at 2014-04-25 21:52:53 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8FR3fLWac73uyAnKEgcYbpL9bycADOe9Q4VQprdm4uc=", "userName"=>"martin", "password"=>"[FILTERED]", "commit"=>"", "class"=>"logoLogin"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."userName" = 'martin' LIMIT 1[0m
+Redirected to http://localhost:3000/reports/new
+Completed 302 Found in 93ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/reports/new" for 127.0.0.1 at 2014-04-25 21:52:53 -0500
+Processing by ReportsController#new as HTML
+  Rendered reports/_form.html.erb (17.7ms)
+  Rendered reports/new.html.erb within layouts/application (18.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:54 -0500
+
+
+Started GET "/log_in" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/estilo2.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/estilo.css?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-25 21:52:57 -0500
