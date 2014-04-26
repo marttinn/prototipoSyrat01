@@ -1,0 +1,142 @@
+<%= form_for(@report) do |f| %>
+  <% if @report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+      <% @report.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  				<div class="field">
+    <%= f.label :nombreAjustador %><br>
+
+    <%= f.text_field :nombreAjustador %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroPoliza %><br>
+    <%= f.text_field :numeroPoliza %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :fechaExpedicion %><br>
+    <%= f.date_select :fechaExpedicion %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :nombreAsegurado %><br>
+    <%= f.text_field :nombreAsegurado %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :telefonoAsegurado %><br>
+    <%= f.text_field :telefonoAsegurado %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :estatusCobranza %><br>
+    <%= f.check_box :estatusCobranza %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :equipoAmparado %><br>
+    <%= f.check_box :equipoAmparado %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :comentarioEquipoAmparado %><br>
+    <%= f.text_area :comentarioEquipoAmparado %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroSiniestro %><br>
+    <%= f.text_field :numeroSiniestro %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroInciso %><br>
+    <%= f.text_field :numeroInciso %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :fechaSiniestro %><br>
+    <%= f.date_select :fechaSiniestro %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :terceroAsegurado %><br>
+    <%= f.check_box :terceroAsegurado %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :condicionesEspeciales %><br>
+    <%= f.text_area :condicionesEspeciales %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :nombreTercero %><br>
+    <%= f.text_field :nombreTercero %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :inventario %><br>
+    <%= f.text_area :inventario %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroEconomico %><br>
+    <%= f.text_field :numeroEconomico %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :siniestro %><br>
+    <%= f.text_area :siniestro %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :grua %><br>
+    <%= f.check_box :grua %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :valorComercial %><br>
+    <%= f.text_field :valorComercial %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :sigueAuto %><br>
+    <%= f.check_box :sigueAuto %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :deducible %><br>
+    <%= f.check_box :deducible %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :deducibleValor %><br>
+    <%= f.text_field :deducibleValor %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :aseguradoTercero %><br>
+    <%= f.text_field :aseguradoTercero %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :marca %><br>
+    <%= f.text_field :marca %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :tipo %><br>
+    <%= f.text_field :tipo %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :modelo %><br>
+    <%= f.text_field :modelo %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroPuertas %><br>
+    <%= f.number_field :numeroPuertas %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroSerie %><br>
+    <%= f.text_field :numeroSerie %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :numeroMotor %><br>
+    <%= f.text_field :numeroMotor %>
+  </div>
+  				<div class="col-xs-2">
+    <%= f.label :placas %><br>
+    <%= f.text_field :placas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
