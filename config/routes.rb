@@ -7,7 +7,7 @@ Syrat::Application.routes.draw do
   get "sign_up" => "users#new", :as => "sign_up"
   get "reportes" ,to: "reports#index"
 
-  root :to => "log_in"
+  root :to => "sessions#new"
   resources :users
   resources :sessions
 
