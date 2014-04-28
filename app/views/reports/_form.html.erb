@@ -1,4 +1,9 @@
-<%= form_for(@report) do |f| %>
+<div class="container sourcesans" >
+  <div class="row bprinc" style="height:100px">
+    <div class= "col-xs-4 col-sm-4 col-md-3" ><img src="/assets/imgLogos-03.svg" style="padding-top:10px; margin-left:20px" alt="Syrat" class="img-responsive"></div>
+    <div class= "col-xs-2 col-sm-1 col-md-1  col-xs-offset-6 col-sm-offset-6 col-md-offset-7"><img src="/assets/imgSLogo.svg" style="margin-top:20px; margin-bottom:10px; margin-right:50px" alt="IMEX" class="img-responsive"></div>
+  </div>
+<%= form_for @report, :html => {:class => 'form textUppercase'} do |f|  %>
   <% if @report.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
@@ -10,132 +15,138 @@
       </ul>
     </div>
   <% end %>
+<div class="row grsec form-group" >
 
-  <div class="field">
-    <%= f.label :nombreAjustador %><br>
-    <%= f.text_field :nombreAjustador %>
+  <h1 class="blueTitle" >INFORMACIÓN PRIMARIA DEL SINIESTRO</h1>
+<!-- PONER CORREO  -->
+<!-- Fecha de expedicion de documento (?) -->
+  <div class="col-xs-2">
+    <%= f.text_field :numeroSiniestro, :class => 'formStyle' %>
+    <label style="padding-left: 2px;">No. de siniestro</label>
   </div>
-  <div class="field">
-    <%= f.label :numeroPoliza %><br>
-    <%= f.text_field :numeroPoliza %>
-  </div>
-  <div class="field">
-    <%= f.label :fechaExpedicion %><br>
-    <%= f.date_select :fechaExpedicion %>
-  </div>
-  <div class="field">
-    <%= f.label :nombreAsegurado %><br>
-    <%= f.text_field :nombreAsegurado %>
-  </div>
-  <div class="field">
-    <%= f.label :telefonoAsegurado %><br>
-    <%= f.text_field :telefonoAsegurado %>
-  </div>
-  <div class="field">
-    <%= f.label :estatusCobranza %><br>
-    <%= f.check_box :estatusCobranza %>
-  </div>
-  <div class="field">
-    <%= f.label :equipoAmparado %><br>
-    <%= f.check_box :equipoAmparado %>
-  </div>
-  <div class="field">
-    <%= f.label :comentarioEquipoAmparado %><br>
-    <%= f.text_area :comentarioEquipoAmparado %>
-  </div>
-  <div class="field">
-    <%= f.label :numeroSiniestro %><br>
-    <%= f.text_field :numeroSiniestro %>
-  </div>
-  <div class="field">
-    <%= f.label :numeroInciso %><br>
-    <%= f.text_field :numeroInciso %>
-  </div>
-  <div class="field">
-    <%= f.label :fechaSiniestro %><br>
-    <%= f.date_select :fechaSiniestro %>
-  </div>
-  <div class="field">
-    <%= f.label :terceroAsegurado %><br>
-    <%= f.check_box :terceroAsegurado %>
-  </div>
-  <div class="field">
-    <%= f.label :condicionesEspeciales %><br>
-    <%= f.text_area :condicionesEspeciales %>
-  </div>
-  <div class="field">
-    <%= f.label :nombreTercero %><br>
-    <%= f.text_field :nombreTercero %>
-  </div>
-  <div class="field">
-    <%= f.label :inventario %><br>
-    <%= f.text_area :inventario %>
-  </div>
-  <div class="field">
-    <%= f.label :numeroEconomico %><br>
-    <%= f.text_field :numeroEconomico %>
-  </div>
-  <div class="field">
-    <%= f.label :siniestro %><br>
-    <%= f.text_area :siniestro %>
-  </div>
-  <div class="field">
-    <%= f.label :grua %><br>
-    <%= f.check_box :grua %>
-  </div>
-  <div class="field">
-    <%= f.label :valorComercial %><br>
-    <%= f.text_field :valorComercial %>
-  </div>
-  <div class="field">
-    <%= f.label :sigueAuto %><br>
-    <%= f.check_box :sigueAuto %>
-  </div>
-  <div class="field">
-    <%= f.label :deducible %><br>
-    <%= f.check_box :deducible %>
-  </div>
-  <div class="field">
-    <%= f.label :deducibleValor %><br>
-    <%= f.text_field :deducibleValor %>
-  </div>
-  <div class="field">
-    <%= f.label :aseguradoTercero %><br>
-    <%= f.text_field :aseguradoTercero %>
-  </div>
-  <div class="field">
-    <%= f.label :marca %><br>
-    <%= f.text_field :marca %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo %><br>
-    <%= f.text_field :tipo %>
-  </div>
-  <div class="field">
-    <%= f.label :modelo %><br>
-    <%= f.text_field :modelo %>
-  </div>
-  <div class="field">
-    <%= f.label :numeroPuertas %><br>
-    <%= f.number_field :numeroPuertas %>
-  </div>
-  <div class="field">
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
-  </div>
-  <div class="field">
-    <%= f.label :numeroSerie %><br>
-    <%= f.text_field :numeroSerie %>
-  </div>
-  <div class="field">
-    <%= f.label :numeroMotor %><br>
-    <%= f.text_field :numeroMotor %>
-  </div>
-  <div class="field">
-    <%= f.label :placas %><br>
-    <%= f.text_field :placas %>
-  </div>
+
+    <div class="col-xs-3">
+      <%= f.text_field :numeroPoliza, :class => 'formStyle'  %>
+      <label style="padding-left: 2px;">no. de póliza</label>
+    </div>
+
+    <div class="col-xs-3">
+      <%= f.text_field :numeroInciso, :class => 'formStyle'  %>
+      <label style="padding-left: 2px;">no. de inciso</label>
+    </div>
+
+    <div class="col-xs-2">
+      <%= f.text_field :fechaSiniestro, :class => 'formStyle datepicker'  %>
+      <label style="padding-left: 2px;">fecha de siniestro</label>
+    </div>
+
+    <div class="col-xs-5">
+      <%= f.text_field :nombreAsegurado, :class => 'formStyle'  %>
+      <label style="padding-left: 2px;">nombre del asegurado</label>
+    </div>
+
+    <div class="col-xs-3">
+        <%= f.text_field :telefonoAsegurado, :class => 'formStyle'  %>
+        <label style="padding-left: 2px;">teléfono</label>
+    </div>
+    <div class="col-xs-2">
+        <%= f.text_field :deducible, :class => 'formStyle '  %>
+        <label style="padding-left: 2px;">deducible</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :valorComercial, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">valor comercial</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :estatusCobranza, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">estatus cobranza</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :valorComercial, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">valor comercial</label>
+    </div>
+    <div class="col-xs-4">
+      <%= f.text_field :nombreAjustador, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Nombre del Ajustador</label>
+    </div>
+</div> <!-- ./ div row grsec-->
+
+
+
+
+<div class="row form-group" > <h3 class="blueTitle centerText masInfoHeight" >MÁS INFORMACIÓN</h3></div>
+
+  <div class="row grsec form-group"> <h1 class="col-xs-12 blueTitle" >INFORMACIÓN VEHÍCULO ASEGURADO</h1>
+
+    <div class="col-xs-2">
+      <%= f.text_field :marca, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Marca</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :modelo, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Modelo</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :tipo, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Tipo</label>
+    </div>
+    <div class="col-xs-1">
+      <%= f.number_field :numeroPuertas, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Puertas</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :color, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Color</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :placas, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Placas</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :numeroSerie, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Número de Serie</label>
+    </div>
+    <div class="col-xs-2">
+      <%= f.text_field :numeroMotor, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Número de Motor</label>
+    </div>
+
+
+
+  </div><!-- ./info vehiculo asegurado -->
+
+  <div class="row grsec form-group" > <h1 class="blueTitle" >INFORMACIÓN SECUNDARIA DEL SINIESTRO	</h1>
+    <div class="col-xs-3">
+      <%= f.text_field :equipoAmparado, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Equipo Amparado</label>
+    </div>
+    <div class="col-xs-3">
+      <%= f.text_area :comentarioEquipoAmparado, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Comentario</label>
+    </div>
+    <div class="col-xs-3">
+      <%= f.text_area :condicionesEspeciales, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Condiciones especiales</label>
+    </div>
+    <div class="col-xs-3">
+      <%= f.text_area :inventario, :class => 'formStyle '  %>
+      <label style="padding-left: 2px;">Inventario</label>
+    </div>
+    <!-- checar checkboxes con UI -->
+    <div class="col-xs-3">
+      <label style="padding-left: 8px; margin-top: 10px;">Requiere grúa</label><h9 style="padding-left: 2px; font-size: 12px;">si</h9>
+      <label><%= f.check_box :grua, :class => 'ios-switch green' %><div><div></div></div></label><h9 style="padding-left: 3px; font-size: 12px;">no</h9>
+    </div>
+
+    <div class="col-xs-3">
+      <label style="padding-left: 0px; margin-top: 10px;">Siniestro por</label><h9 style="padding-left: 2px; font-size: 12px;">robo</h9>
+      <label><input type="checkbox" class="ios-switch green" /><div><div></div></div></label><h8 style="padding-left: 3px; font-size: 12px;">accidente</h8>
+    </div>
+
+
+  </div><!-- ./info secundaria -->
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => 'goButton', :value => ''%>
   </div>
 <% end %>

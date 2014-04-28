@@ -158,6 +158,10 @@ label{
   font-size: 12px;
 }
 
+
+
+
+
 .formStyle {
   border-top: none;
   border-left: none;
@@ -249,37 +253,47 @@ label{
 
 }
 
+.miniButt{
+font-family: 'Source Sans Pro' ;
+font-size: 9px;
+font-weight: 300;
+color: #1e5da2;
+letter-spacing:2px;
+margin-left: 20px;
+}
+
 /* Normal Knob */
 input[type="checkbox"] { 
   position: absolute;
-  margin-left: 90px;
+  margin-left: 0px;
   opacity: 0;
 }
 
 /* Normal Track */
 input[type="checkbox"].ios-switch + div {
   vertical-align: middle;
-  width: 40px;  height: 20px;
+  width: 24px;  height: 12px;
   border: 0px solid rgba(0,0,0,.4);
   border-radius: 999px;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition-duration: .4s;
   -webkit-transition-property: background-color, box-shadow;
   box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
-  margin: -37px 48em 37px 16.7em;
+  margin: -7px 0px;
+  margin-top: 0px;
 }
 
 /* Green Track */
 input[type="checkbox"].green.ios-switch:checked + div {
-  background-color: #d63f49;
+  background-color: #1e5da2;
   border: 0px solid rgba(0, 162, 63,1);
-  box-shadow: inset 0 0 0 10px rgba(214, 63, 73,1);
+  box-shadow: inset 0 0 0 10px rgba(30, 93, 162,1);
 }
 
 /* Normal Knob */
 input[type="checkbox"].ios-switch + div > div {
   float: left;
-  width: 18px; height: 18px;
+  width: 10px; height: 10px;
   border-radius: inherit;
   background: #ffffff;
   -webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
@@ -296,12 +310,16 @@ input[type="checkbox"].ios-switch + div > div {
 
 /* Checked Knob (Blue Style) */
 input[type="checkbox"].ios-switch:checked + div > div {
-  -webkit-transform: translate3d(20px, 0, 0);
-  -moz-transform: translate3d(20px, 0, 0);
+  -webkit-transform: translate3d(12px, 0, 0);
+  -moz-transform: translate3d(12px, 0, 0);
   background-color: #ffffff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0), 0px 0px 0 1px rgba(8, 80, 172, 0);
 }
 
+.formLine{
+  padding-left: 1px;
+  padding-right: 1px; 
+}
 
 /* -------------------------------------------------- */
 
@@ -321,6 +339,8 @@ input[type="checkbox"].ios-switch:checked + div > div {
 }
 
 
+
+
 /*INICIO DE ESTILO AVISO DE PRIVACIDAD*/
 
 .panpBack
@@ -337,6 +357,10 @@ input[type="checkbox"].ios-switch:checked + div > div {
   width: 960px;
   height: 500px;
   margin: 100px auto;
+}
+
+.formSwitch{
+  margin-top: 10px !important;
 }
 
 /*FIN DE ESTILO AVISO DE PRIVACIDAD*/
