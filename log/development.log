@@ -19420,3 +19420,125 @@ Started GET "/" for 127.0.0.1 at 2014-04-28 00:05:42 -0500
 Processing by SessionsController#new as HTML
   Rendered sessions/new.html.erb within layouts/application (1.4ms)
 Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (1.8ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReports (20140503230814)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (22.4ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140503230814"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (8.4ms)[0m  DROP TABLE "reports"
+  [1m[36m (7.5ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.2ms)[0m  DROP TABLE "reports"
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.0ms)[0m  DROP TABLE "reports"
+  [1m[36mSQL (2.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140503230814'[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (6.8ms)[0m  CREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140503230814"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.6ms)[0m  DROP TABLE "reports"
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140503230814'[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.8ms)[0m  CREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140503230814"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (3.0ms)[0m  DROP TABLE "reports"
+  [1m[36mSQL (1.9ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140503230814'[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (7.3ms)[0m  CREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140503230814"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.4ms)[0m  DROP TABLE "reports"
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140503230814'[0m
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (6.5ms)[0m  CREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140503230814"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReports (20140503230814)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.5ms)[0m  DROP TABLE "reports"
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140503230814'[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateReports (20140503230814)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (9.4ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140503230814"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140320021855)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "userName" character varying(255), "nombre" character varying(255), "apellidoPaterno" character varying(255), "apellidoMaterno" character varying(255), "password_hash" character varying(255), "password_salt" character varying(255), "privilages" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140320021855"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReports (20140503230814)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (8.3ms)[0m  [1mCREATE TABLE "reports" ("id" serial primary key, "companiaSeguros" character varying(255), "noSiniestro" character varying(255), "noPoliza" character varying(255), "noInciso" character varying(255), "noSerie" character varying(255), "fechaSiniestro" date, "nombreAsegurado" character varying(255), "numeroTelefono" character varying(255), "emailAsegurado" character varying(255), "horarioContacto" character varying(255), "porcentajeDeducible" character varying(255), "valorComercial" character varying(255), "montoDeducible" character varying(255), "estatusCobranza" character varying(255), "marcaVehiculo" character varying(255), "modeloVehiculo" character varying(255), "colorVehiculo" character varying(255), "tipoVehiculo" character varying(255), "anoVehiculo" character varying(255), "placasVehiculo" character varying(255), "agenteAjustador" character varying(255), "terceroAsegurado" character varying(255), "condicionesEspeciales" character varying(255), "nombreTerceroAfectado" character varying(255), "noMotor" character varying(255), "siniestro" character varying(255), "equipoEspecialAmparado" character varying(255), "comentarioSecundario" character varying(255), "requiereGrua" character varying(255), "sigueAuto" character varying(255), "foto1" character varying(255), "foto2" character varying(255), "foto3" character varying(255), "comentarioGeneral" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140503230814"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

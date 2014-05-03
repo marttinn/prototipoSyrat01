@@ -1,4 +1,4 @@
 json.array!(@reports) do |report|
-  json.extract! report, :nombreAjustador, :numeroPoliza, :fechaExpedicion, :nombreAsegurado, :telefonoAsegurado, :estatusCobranza, :equipoAmparado, :comentarioEquipoAmparado, :numeroSiniestro, :numeroInciso, :fechaSiniestro, :terceroAsegurado, :condicionesEspeciales, :nombreTercero, :inventario, :numeroEconomico, :siniestro, :grua, :valorComercial, :sigueAuto, :deducible, :deducibleValor, :aseguradoTercero, :marca, :tipo, :modelo, :numeroPuertas, :color, :numeroSerie, :numeroMotor, :placas
+  json.extract! report, :companiaSeguros, :noSiniestro, :noPoliza, :noInciso, :noSerie, :fechaSiniestro, :nombreAsegurado, :numeroTelefono, :emailAsegurado, :horarioContacto, :porcentajeDeducible, :valorComercial, :montoDeducible, :estatusCobranza, :marcaVehiculo, :modeloVehiculo, :colorVehiculo, :tipoVehiculo, :anoVehiculo, :placasVehiculo, :agenteAjustador, :terceroAsegurado, :condicionesEspeciales, :nombreTerceroAfectado, :noMotor, :siniestro, :equipoEspecialAmparado, :comentarioSecundario, :requiereGrua, :sigueAuto, :terceroAsegurado, :foto1, :foto2, :foto3, :comentarioGeneral
   json.url report_url(report, format: :json)
 end

@@ -1,18 +1,33 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nombreajustador:</strong>
-  <%= @report.nombreAjustador %>
+  <strong>Companiaseguros:</strong>
+  <%= @report.companiaSeguros %>
 </p>
 
 <p>
-  <strong>Numeropoliza:</strong>
-  <%= @report.numeroPoliza %>
+  <strong>Nosiniestro:</strong>
+  <%= @report.noSiniestro %>
 </p>
 
 <p>
-  <strong>Fechaexpedicion:</strong>
-  <%= @report.fechaExpedicion %>
+  <strong>Nopoliza:</strong>
+  <%= @report.noPoliza %>
+</p>
+
+<p>
+  <strong>Noinciso:</strong>
+  <%= @report.noInciso %>
+</p>
+
+<p>
+  <strong>Noserie:</strong>
+  <%= @report.noSerie %>
+</p>
+
+<p>
+  <strong>Fechasiniestro:</strong>
+  <%= @report.fechaSiniestro %>
 </p>
 
 <p>
@@ -21,8 +36,33 @@
 </p>
 
 <p>
-  <strong>Telefonoasegurado:</strong>
-  <%= @report.telefonoAsegurado %>
+  <strong>Numerotelefono:</strong>
+  <%= @report.numeroTelefono %>
+</p>
+
+<p>
+  <strong>Emailasegurado:</strong>
+  <%= @report.emailAsegurado %>
+</p>
+
+<p>
+  <strong>Horariocontacto:</strong>
+  <%= @report.horarioContacto %>
+</p>
+
+<p>
+  <strong>Porcentajededucible:</strong>
+  <%= @report.porcentajeDeducible %>
+</p>
+
+<p>
+  <strong>Valorcomercial:</strong>
+  <%= @report.valorComercial %>
+</p>
+
+<p>
+  <strong>Montodeducible:</strong>
+  <%= @report.montoDeducible %>
 </p>
 
 <p>
@@ -31,28 +71,38 @@
 </p>
 
 <p>
-  <strong>Equipoamparado:</strong>
-  <%= @report.equipoAmparado %>
+  <strong>Marcavehiculo:</strong>
+  <%= @report.marcaVehiculo %>
 </p>
 
 <p>
-  <strong>Comentarioequipoamparado:</strong>
-  <%= @report.comentarioEquipoAmparado %>
+  <strong>Modelovehiculo:</strong>
+  <%= @report.modeloVehiculo %>
 </p>
 
 <p>
-  <strong>Numerosiniestro:</strong>
-  <%= @report.numeroSiniestro %>
+  <strong>Colorvehiculo:</strong>
+  <%= @report.colorVehiculo %>
 </p>
 
 <p>
-  <strong>Numeroinciso:</strong>
-  <%= @report.numeroInciso %>
+  <strong>Tipovehiculo:</strong>
+  <%= @report.tipoVehiculo %>
 </p>
 
 <p>
-  <strong>Fechasiniestro:</strong>
-  <%= @report.fechaSiniestro %>
+  <strong>Anovehiculo:</strong>
+  <%= @report.anoVehiculo %>
+</p>
+
+<p>
+  <strong>Placasvehiculo:</strong>
+  <%= @report.placasVehiculo %>
+</p>
+
+<p>
+  <strong>Agenteajustador:</strong>
+  <%= @report.agenteAjustador %>
 </p>
 
 <p>
@@ -66,18 +116,13 @@
 </p>
 
 <p>
-  <strong>Nombretercero:</strong>
-  <%= @report.nombreTercero %>
+  <strong>Nombreterceroafectado:</strong>
+  <%= @report.nombreTerceroAfectado %>
 </p>
 
 <p>
-  <strong>Inventario:</strong>
-  <%= @report.inventario %>
-</p>
-
-<p>
-  <strong>Numeroeconomico:</strong>
-  <%= @report.numeroEconomico %>
+  <strong>Nomotor:</strong>
+  <%= @report.noMotor %>
 </p>
 
 <p>
@@ -86,13 +131,18 @@
 </p>
 
 <p>
-  <strong>Grua:</strong>
-  <%= @report.grua %>
+  <strong>Equipoespecialamparado:</strong>
+  <%= @report.equipoEspecialAmparado %>
 </p>
 
 <p>
-  <strong>Valorcomercial:</strong>
-  <%= @report.valorComercial %>
+  <strong>Comentariosecundario:</strong>
+  <%= @report.comentarioSecundario %>
+</p>
+
+<p>
+  <strong>Requieregrua:</strong>
+  <%= @report.requiereGrua %>
 </p>
 
 <p>
@@ -101,58 +151,28 @@
 </p>
 
 <p>
-  <strong>Deducible:</strong>
-  <%= @report.deducible %>
+  <strong>Terceroasegurado:</strong>
+  <%= @report.terceroAsegurado %>
 </p>
 
 <p>
-  <strong>Deduciblevalor:</strong>
-  <%= @report.deducibleValor %>
+  <strong>Foto1:</strong>
+  <%= @report.foto1 %>
 </p>
 
 <p>
-  <strong>Aseguradotercero:</strong>
-  <%= @report.aseguradoTercero %>
+  <strong>Foto2:</strong>
+  <%= @report.foto2 %>
 </p>
 
 <p>
-  <strong>Marca:</strong>
-  <%= @report.marca %>
+  <strong>Foto3:</strong>
+  <%= @report.foto3 %>
 </p>
 
 <p>
-  <strong>Tipo:</strong>
-  <%= @report.tipo %>
-</p>
-
-<p>
-  <strong>Modelo:</strong>
-  <%= @report.modelo %>
-</p>
-
-<p>
-  <strong>Numeropuertas:</strong>
-  <%= @report.numeroPuertas %>
-</p>
-
-<p>
-  <strong>Color:</strong>
-  <%= @report.color %>
-</p>
-
-<p>
-  <strong>Numeroserie:</strong>
-  <%= @report.numeroSerie %>
-</p>
-
-<p>
-  <strong>Numeromotor:</strong>
-  <%= @report.numeroMotor %>
-</p>
-
-<p>
-  <strong>Placas:</strong>
-  <%= @report.placas %>
+  <strong>Comentariogeneral:</strong>
+  <%= @report.comentarioGeneral %>
 </p>
 
 <%= link_to 'Edit', edit_report_path(@report) %> |

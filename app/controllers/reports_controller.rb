@@ -27,7 +27,7 @@ class ReportsController < ApplicationController
     @report = Report.new(report_params)
 
     respond_to do |format|
-      if @report.save!
+      if @report.save
         format.html { redirect_to @report, notice: 'Report was successfully created.' }
         format.json { render action: 'show', status: :created, location: @report }
       else
@@ -69,6 +69,6 @@ class ReportsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def report_params
-      params.require(:report).permit(:nombreAjustador, :numeroPoliza, :fechaExpedicion, :nombreAsegurado, :telefonoAsegurado, :estatusCobranza, :equipoAmparado, :comentarioEquipoAmparado, :numeroSiniestro, :numeroInciso, :fechaSiniestro, :terceroAsegurado, :condicionesEspeciales, :nombreTercero, :inventario, :numeroEconomico, :siniestro, :grua, :valorComercial, :sigueAuto, :deducible, :deducibleValor, :aseguradoTercero, :marca, :tipo, :modelo, :numeroPuertas, :color, :numeroSerie, :numeroMotor, :placas)
+      params.require(:report).permit(:companiaSeguros, :noSiniestro, :noPoliza, :noInciso, :noSerie, :fechaSiniestro, :nombreAsegurado, :numeroTelefono, :emailAsegurado, :horarioContacto, :porcentajeDeducible, :valorComercial, :montoDeducible, :estatusCobranza, :marcaVehiculo, :modeloVehiculo, :colorVehiculo, :tipoVehiculo, :anoVehiculo, :placasVehiculo, :agenteAjustador, :terceroAsegurado, :condicionesEspeciales, :nombreTerceroAfectado, :noMotor, :siniestro, :equipoEspecialAmparado, :comentarioSecundario, :requiereGrua, :sigueAuto, :terceroAsegurado, :foto1, :foto2, :foto3, :comentarioGeneral)
     end
 end
