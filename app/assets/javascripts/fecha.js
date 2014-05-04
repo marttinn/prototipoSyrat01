@@ -1,1 +1,4 @@
-$('.datepicker').datepicker()
+$('.datepicker').datepicker();
+
+
+$('.textarea1').autoResize();

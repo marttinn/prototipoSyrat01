@@ -338,6 +338,20 @@ input[type="checkbox"].ios-switch:checked + div > div {
     outline: 0;
 }
 
+.nextButton
+{
+  background-image: url(../img/nextButton.png), none;
+    margin-bottom: 0px;
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 53px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    outline: 0;
+}
+
 
 
 

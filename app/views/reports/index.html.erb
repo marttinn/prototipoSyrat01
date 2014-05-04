@@ -1,90 +1,39 @@
-<h1>Listing reports</h1>
+<h1>Reportes</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Companiaseguros</th>
-      <th>Nosiniestro</th>
-      <th>Nopoliza</th>
-      <th>Noinciso</th>
-      <th>Noserie</th>
-      <th>Fechasiniestro</th>
-      <th>Nombreasegurado</th>
-      <th>Numerotelefono</th>
-      <th>Emailasegurado</th>
-      <th>Horariocontacto</th>
-      <th>Porcentajededucible</th>
-      <th>Valorcomercial</th>
-      <th>Montodeducible</th>
-      <th>Estatuscobranza</th>
-      <th>Marcavehiculo</th>
-      <th>Modelovehiculo</th>
-      <th>Colorvehiculo</th>
-      <th>Tipovehiculo</th>
-      <th>Anovehiculo</th>
-      <th>Placasvehiculo</th>
-      <th>Agenteajustador</th>
-      <th>Terceroasegurado</th>
-      <th>Condicionesespeciales</th>
-      <th>Nombreterceroafectado</th>
-      <th>Nomotor</th>
-      <th>Siniestro</th>
-      <th>Equipoespecialamparado</th>
-      <th>Comentariosecundario</th>
-      <th>Requieregrua</th>
-      <th>Sigueauto</th>
-      <th>Terceroasegurado</th>
-      <th>Foto1</th>
-      <th>Foto2</th>
-      <th>Foto3</th>
-      <th>Comentariogeneral</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <td>Número de Siniestro</td>
+      <td>Compañia</td>
+      <td>Asegurado</td>
+      <td>Marca</td>
+      <td>Modelo</td>
+      <td>Color</td>
+      <td>Año</td>
+      <td></td>
+      <td></td>
+      <td></td>
+
     </tr>
   </thead>
 
   <tbody>
     <% @reports.each do |report| %>
       <tr>
-        <td><%= report.companiaSeguros %></td>
+
+
         <td><%= report.noSiniestro %></td>
-        <td><%= report.noPoliza %></td>
-        <td><%= report.noInciso %></td>
-        <td><%= report.noSerie %></td>
-        <td><%= report.fechaSiniestro %></td>
+        <td><%= report.companiaSeguros %></td>
         <td><%= report.nombreAsegurado %></td>
-        <td><%= report.numeroTelefono %></td>
-        <td><%= report.emailAsegurado %></td>
-        <td><%= report.horarioContacto %></td>
-        <td><%= report.porcentajeDeducible %></td>
-        <td><%= report.valorComercial %></td>
-        <td><%= report.montoDeducible %></td>
-        <td><%= report.estatusCobranza %></td>
         <td><%= report.marcaVehiculo %></td>
         <td><%= report.modeloVehiculo %></td>
         <td><%= report.colorVehiculo %></td>
-        <td><%= report.tipoVehiculo %></td>
         <td><%= report.anoVehiculo %></td>
-        <td><%= report.placasVehiculo %></td>
-        <td><%= report.agenteAjustador %></td>
-        <td><%= report.terceroAsegurado %></td>
-        <td><%= report.condicionesEspeciales %></td>
-        <td><%= report.nombreTerceroAfectado %></td>
-        <td><%= report.noMotor %></td>
-        <td><%= report.siniestro %></td>
-        <td><%= report.equipoEspecialAmparado %></td>
-        <td><%= report.comentarioSecundario %></td>
-        <td><%= report.requiereGrua %></td>
-        <td><%= report.sigueAuto %></td>
-        <td><%= report.terceroAsegurado %></td>
-        <td><%= report.foto1 %></td>
-        <td><%= report.foto2 %></td>
-        <td><%= report.foto3 %></td>
-        <td><%= report.comentarioGeneral %></td>
-        <td><%= link_to 'Show', report %></td>
-        <td><%= link_to 'Edit', edit_report_path(report) %></td>
-        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+        <td><%= link_to 'Ver', report %></td>
+        <td><%= link_to 'Editar', edit_report_path(report) %></td>
+        <td><%= link_to 'Eliminar', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -92,4 +41,4 @@
 
 <br>
 
-<%= link_to 'New Report', new_report_path %>
+<%= link_to 'Nuevo Reporte', new_report_path %>
