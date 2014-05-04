@@ -1,7 +1,7 @@
 <div class="container sourcesans" >
   <div class="row bprinc" style="height:100px">
-    <div class= "col-xs-4 col-sm-4 col-md-3" ><img src="img/imgLogos-01.svg" style="padding-top:10px; margin-left:20px" alt="Syrat" class="img-responsive"></div>
-    <div class= "col-xs-2 col-sm-1 col-md-1  col-xs-offset-6 col-sm-offset-6 col-md-offset-7"><img src="img/imgSLogo.svg" style="margin-top:20px; margin-bottom:10px; margin-right:50px" alt="IMEX" class="img-responsive"></div>
+    <div class= "col-xs-4 col-sm-4 col-md-3" ><img src="imgLogos-01.svg" style="padding-top:10px; margin-left:20px" alt="Syrat" class="img-responsive"></div>
+    <div class= "col-xs-2 col-sm-1 col-md-1  col-xs-offset-6 col-sm-offset-6 col-md-offset-7"><img src="assets/img/imgSLogo.svg" style="margin-top:20px; margin-bottom:10px; margin-right:50px" alt="IMEX" class="img-responsive"></div>
   </div>
 
 <%= form_for @report, :html => {:class => 'form textUppercase'} do |f|  %>
@@ -31,147 +31,226 @@
       </div>
 
   <div class="col-xs-2">
-    <%= f.label :noSiniestro , :class => 'formStyle' %><br>
+    <%= f.text_field :noSiniestro, :class => 'formStyle' %>
     <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+  </div>
+  <div class="col-xs-3">
+    <%= f.text_field :noPoliza, :class => 'formStyle' %>
+    <label style="padding-left: 2px;">no. de póliza</label>
+  </div>
+  <div class="col-xs-3">
+    <%= f.text_field :noInciso,:class => 'formStyle' %>
+    <label style="padding-left: 2px;">no. de inciso</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :noSerie, :class => 'formStyle' %>
+    <label style="padding-left: 2px;">no. de serie</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.date_select :fechaSiniestro, :class => 'formStyle' %>
+    <label style="padding-left: 2px;">fecha de siniestro</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :nombreAsegurado, :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">nombre del asegurado</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :numeroTelefono,  :class => 'formStyle' %>
+    <label style="padding-left: 2px;">teléfono</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :emailAsegurado,  :class => 'formStyle' %>
+    <label style="padding-left: 2px;">e-mail</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :horarioContacto,  :class => 'formStyle' %>
+    <label style="padding-left: 2px;">Horario de Contacto</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :porcentajeDeducible,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">% Deducible</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :valorComercial,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Valor Comercial</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :montoDeducible ,  :class => 'formStyle' %>
+    <label style="padding-left: 2px;">Monto Deducible</label>
+  </div>
+  <div class="col-xs-2">
+    <%= f.text_field :estatusCobranza,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Estatus de Cobranza</label>
   </div>
 
+  <h1 class="col-xs-12 blueTitle" >INFORMACIÓN VEHÍCULO</h1>
+
+
   <div class="col-xs-2">
-    <%= f.label :noSiniestro , :class => 'formStyle' %><br>
-    <%= f.text_field :noSiniestro %>
+    <%= f.text_field :marcaVehiculo,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">marca</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :noPoliza %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :modeloVehiculo,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">modelo</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :noInciso %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :colorVehiculo,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">color</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :noSerie %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :tipoVehiculo,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">tipo</label>
   </div>
   <div class="col-xs-2">
-    <%= f.date_select :fechaSiniestro %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :anoVehiculo,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">año</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :nombreAsegurado %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :placasVehiculo,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">placas</label>
+  </div>
+  <div class="row form-group"></div>
+
+</div>
+
+<div class="row form-group" > <h3 class="blueTitle centerText masInfoHeight" >más información</h3></div>
+<div class="row grsec form-group" > <h1 class="blueTitle" >Información para el ajustador</h1>
+
+  <div class="formLine col-xs-4">
+    <%= f.text_field :agenteAjustador,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">agente ajustador</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :numeroTelefono %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :terceroAsegurado,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">tercero asegurado</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :emailAsegurado %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :condicionesEspeciales,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">condiciones especiales</label>
+  </div>
+  <div class="col-xs-4">
+    <%= f.text_field :nombreTerceroAfectado,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Nombre tercero afectado</label>
+  </div>
+  <div class="col-xs-4">
+    <%= f.text_field :noMotor,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Número de motor</label>
+  </div>
+
+  <h1 class="col-xs-12 blueTitle" >INFORMACIÓN SECUNDARIA</h1>
+
+  <div class="col-xs-3">
+    <%= f.text_field :siniestro,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">siniestro por (Robo/Colisión)</label>
+  </div>
+  <div class="col-xs-3">
+    <%= f.text_field :equipoEspecialAmparado,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Equipo Especial Amparado (Si/No)</label>
   </div>
   <div class="col-xs-2">
-    <%= f.text_field :horarioContacto %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+    <%= f.text_field :comentarioSecundario,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Comentario</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :porcentajeDeducible %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+  <div class="col-xs-3">
+    <%= f.text_field :requiereGrua,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Requiere Grua (Si/No)</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :valorComercial %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+
+  <div class="col-xs-3">
+    <%= f.text_field :sigueAuto,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Tercero Asegurado (Si/No)</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :montoDeducible %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+  <div class="col-xs-3">
+    <%= f.text_field :terceroAsegurado,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Sigue con Auto (Si/No)</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :estatusCobranza %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+  <div class="row form-group"></div>
+
+</div>
+<div class="row form-group" > <h3 class="blueTitle centerText masInfoHeight" >documentación</h3></div>
+  <div class="row grsec form-group" > <h1 class="blueTitle" >fotografías del automóvil</h1>
+
+  <div class="col-xs-3">
+    <%= f.text_field :foto1,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">Foto 1</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :marcaVehiculo %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+  <div class="col-xs-3">
+    <%= f.text_field :foto2,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">foto2</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :modeloVehiculo %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+  <div class="col-xs-3">
+    <%= f.text_field :foto3,  :class => 'formStyle'  %>
+    <label style="padding-left: 2px;">foto 3</label>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :colorVehiculo %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+
+  <div class="row form-group"></div>
+
+
+<h1 class="blueTitle" >Documentos Escaneados</h1>
+<div class="col-xs-3">
+<div class="fileinput fileinput-new" data-provides="fileinput"><a href="#" class="fileinput-exists" data-dismiss="fileinput"><img style="width: 30px; margin-left: 79%; margin-bottom: -8%; z-index:1000; position: relative;"src="img/DELETE.png" alt="..."></a>
+    <div class="fileinput-new thumbnail" data-trigger="fileinput" style=" background: none; border: none; width: 170px; height: 120px;">
+      <img src="img/SY_WEB_1_03.png" alt="...">
+
+    </div>
+    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 170px; max-height: 120px;"></div>
+    <div>
+      <span style="display: none;" class="btn btn-default btn-file"><span  class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+    </div>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :tipoVehiculo %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+</div>
+<div class="col-xs-3">
+<div class="fileinput fileinput-new" data-provides="fileinput"><a href="#" class="fileinput-exists" data-dismiss="fileinput"><img style="width: 30px; margin-left: 79%; margin-bottom: -8%; z-index:1000; position: relative;"src="img/DELETE.png" alt="..."></a>
+    <div class="fileinput-new thumbnail" data-trigger="fileinput" style=" background: none; border: none; width: 170px; height: 120px;">
+      <img src="img/SY_WEB_1_03.png" alt="...">
+
+    </div>
+    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 170px; max-height: 120px;"></div>
+    <div>
+      <span style="display: none;" class="btn btn-default btn-file"><span  class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+    </div>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :anoVehiculo %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+</div>
+<div class="col-xs-3">
+<div class="fileinput fileinput-new" data-provides="fileinput"><a href="#" class="fileinput-exists" data-dismiss="fileinput"><img style="width: 30px; margin-left: 79%; margin-bottom: -8%; z-index:1000; position: relative;"src="img/DELETE.png" alt="..."></a>
+    <div class="fileinput-new thumbnail" data-trigger="fileinput" style=" background: none; border: none; width: 170px; height: 120px;">
+      <img src="img/SY_WEB_1_03.png" alt="...">
+
+    </div>
+    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 170px; max-height: 120px;"></div>
+    <div>
+      <span style="display: none;" class="btn btn-default btn-file"><span  class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+    </div>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :placasVehiculo %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
+</div>
+<div class="col-xs-3">
+<div class="fileinput fileinput-new" data-provides="fileinput"><a href="#" class="fileinput-exists" data-dismiss="fileinput"><img style="width: 30px; margin-left: 79%; margin-bottom: -8%; z-index:1000; position: relative;"src="img/DELETE.png" alt="..."></a>
+    <div class="fileinput-new thumbnail" data-trigger="fileinput" style=" background: none; border: none; width: 170px; height: 120px;">
+      <img src="img/SY_WEB_1_03.png" alt="...">
+
+    </div>
+    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 170px; max-height: 120px;"></div>
+    <div>
+      <span style="display: none;" class="btn btn-default btn-file"><span  class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+    </div>
   </div>
-  <div class="col-xs-2">
-    <%= f.text_field :agenteAjustador %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :terceroAsegurado %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :condicionesEspeciales %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :nombreTerceroAfectado %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :noMotor %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :siniestro %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :equipoEspecialAmparado %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :comentarioSecundario %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :requiereGrua %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :sigueAuto %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :terceroAsegurado %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :foto1 %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :foto2 %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_field :foto3 %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="col-xs-2">
-    <%= f.text_area :comentarioGeneral %>
-    <label style="padding-left: 2px;">NO. DE SINIESTRO</label>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+</div>
+
+
+
+</div>
+
+<div class="row form-group" > <h1 class="blueTitle" > </h1></div>
+<div style="padding-bottom: 25px;" class="row grsec form-group" > <h1 class="blueTitle" >Comentarios</h1>
+   <div class="col-xs-8"><%= f.text_area :comentarioGeneral,  :class => 'formStyle textarea1'  %>
+</div>
+
+</div>
+
+
+<div class="col-md-1 col-md-offset-5" >
+    <%= f.submit :class => 'nextButton' %>
   </div>
 <% end %>
+</div>
